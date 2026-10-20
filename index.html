@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendar Bridge</title>
+  <meta name="description" content="A personal, self-hosted service that keeps an iCloud calendar and Google Calendar in sync.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Calendar Bridge</h1>
+  <p class="lead">A small, self-hosted service that keeps one person's iCloud calendar and Google Calendar in sync, so the same events are available in both.</p>
+  <p>Calendar Bridge is a personal tool, not a public service. It runs on its operator's own machine and only accesses the operator's own Google and Apple accounts. There is nothing to sign up for.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Copies events in both directions between an iCloud calendar and a Google calendar that the operator owns.</li>
+    <li>Keeps both copies consistent when an event changes. Conflicting edits are never overwritten silently; they wait for the operator to decide.</li>
+    <li>Shows its synchronization status in a separate "Calendar Bridge Status" calendar in the same Google account.</li>
+  </ul>
+
+  <h2>Google permissions it requests</h2>
+  <ul>
+    <li>See the list of your calendars (<code>calendar.calendarlist.readonly</code>).</li>
+    <li>See, create, change and delete events on calendars you own (<code>calendar.events.owned</code>).</li>
+    <li>Create its own secondary calendars and manage the events in them (<code>calendar.app.created</code>).</li>
+  </ul>
+  <p>It never sends invitations or updates to other people.</p>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+
+  <footer>Operated by <a href="https://github.com/Nicolas1bhr">@Nicolas1bhr</a> on GitHub.</footer>
+</main>
+</body>
+</html>

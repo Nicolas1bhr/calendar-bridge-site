@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy - Calendar Bridge</title>
+  <meta name="description" content="How Calendar Bridge handles calendar data from Google and iCloud.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p><a href="./">Calendar Bridge</a></p>
+  <h1>Privacy policy</h1>
+  <p class="muted">Effective 20 October 2026</p>
+
+  <h2>Who this applies to</h2>
+  <p>Calendar Bridge is a personal, self-hosted application. Its only user is its operator, who authorizes it for their own Google and Apple accounts. It does not offer accounts or services to anyone else.</p>
+
+  <h2>What data it accesses</h2>
+  <ul>
+    <li><strong>Google Calendar</strong>, through the Google Calendar API with the permissions listed on the <a href="./">home page</a>: the list of calendars, and the events on calendars the operator owns (title, time, location, description, reminders, recurrence and the attendees shown on an event).</li>
+    <li><strong>Apple iCloud Calendar</strong>, through CalDAV with an app-specific password: the events of the iCloud calendars the operator selects.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <p>Only to keep the selected calendars synchronized and to show the operator the synchronization status, including in a "Calendar Bridge Status" calendar in the operator's own Google account. The data is not used for advertising, profiling, analytics or training machine-learning models, and it is never sold.</p>
+
+  <h2>Where it is stored</h2>
+  <ul>
+    <li>On the operator's own machine, in a local database: the copies of synchronized events needed to detect changes, and the synchronization state.</li>
+    <li>Sign-in credentials (the Google authorization and the Apple app-specific password) are encrypted with a key kept outside that database.</li>
+    <li>Local backups of the database are encrypted with the same key.</li>
+    <li>Logs record what the service does, not the content of events.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>Calendar data is not shared with anyone. It only travels, over HTTPS, between the operator's machine, Google and Apple. Optional alerts that the operator may configure contain status information, never event content.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Data is kept while the operator uses Calendar Bridge. Records of deleted events are purged after 90 days, and only the most recent local backups are kept. Removing Calendar Bridge's data folder deletes everything it stored; the events themselves stay in Google Calendar and iCloud.</p>
+
+  <h2>Revoking access</h2>
+  <ul>
+    <li>Google: remove Calendar Bridge at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Apple: revoke its app-specific password at <a href="https://account.apple.com">account.apple.com</a>, under Sign-In and Security.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Calendar Bridge's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Changes</h2>
+  <p>Changes to this policy are published on this page with a new effective date.</p>
+
+  <footer>Questions: contact <a href="https://github.com/Nicolas1bhr">@Nicolas1bhr</a> on GitHub.</footer>
+</main>
+</body>
+</html>
